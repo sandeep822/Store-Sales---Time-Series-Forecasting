@@ -3,12 +3,12 @@ The problem at hand involves leveraging machine learning techniques for time-ser
 
 
 ![image](https://github.com/sandeep822/Store-Sales---Time-Series-Forecasting/assets/50867031/aa2352d9-7605-49fd-84bb-7fa07c1e1b6b)
-![image](https://github.com/sandeep822/Store-Sales---Time-Series-Forecasting/assets/50867031/aa2352d9-7605-49fd-84bb-7fa07c1e1b6b)
+
 
 time series, possibly representing sales and oil prices (dcoilwtico) with corresponding dates from 2013 to 2017. The inclusion of "onpromotion" suggests that the dataset may also include information about promotions. The repetition of "sales" and "dcoilwtico" across different time points and years implies a tracking of these metrics over time. The consistent numerical progression from 103 to 100 suggests a decrease in values, possibly indicating a trend or pattern. The dataset seems structured to observe variations in sales, oil prices, and promotional activities over the specified period.
 
 <img width="971" alt="image" src="https://github.com/sandeep822/Store-Sales---Time-Series-Forecasting/assets/50867031/38626a73-1077-4d3c-98b0-e09b6fd9ed85">
-<img width="971" alt="image" src="https://github.com/sandeep822/Store-Sales---Time-Series-Forecasting/assets/50867031/38626a73-1077-4d3c-98b0-e09b6fd9ed85">
+
 
 fits and transforms the training data (X_train[col_names_classic_ml]) through the defined preprocessing pipeline (preprocess_pipe). The pipeline consists of three main steps. First, it encodes categorical features using Target Encoder for selected columns. Second, it applies cyclical transformations (sine and cosine) to the time-related features (day_of_week, month, year). Lastly, it performs polynomial feature engineering up to the second degree and scales the entire dataset using MinMaxScaler. The final transformation is encapsulated in a Pandas DataFrame with columns explicitly named according to the transformed features specified in col_names_classic_ml_transformed. The fitting and transformation process aims to prepare the data for training a machine learning model, ensuring that it captures both temporal patterns and interactions between features while maintaining numerical stability through scaling. The execution time for each step of the pipeline is also provided.
 
